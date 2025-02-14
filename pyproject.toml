@@ -1,0 +1,13 @@
+[project]
+name = "mycustomtkinter"
+version = "0.1.0"
+description = "A demo project to explore customtkinter"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "customtkinter>=5.2.2",
+    "setuptools>=75.8.0",
+]
+
+[project.scripts]
+basic = "mycustomtkinter.examples.basic:main"
