@@ -4,36 +4,18 @@ An example repo for CustomTkinter exploration.
 
 ## Setup
 
-First ensure tcl-tk is installed:
+Create a virtual environment with Python 3.13:
 
 ```bash
-brew install tcl-tk
-brew install python-tabulate
+python3.13 -m venv .venv
 ```
 
-Then install uv:
-
-```bash
-pip install uv
-```
-
-To create the project I initialized it with uv:
-
-```bash
-uv init
-```
-
-Create a new virtual environment with uv:
-
-```bash
-uv .venv -p python3.13
-```
-
-Activate the virtual environment:
+Upgrade pip
 
 ```bash
 source .venv/bin/activate
-```
+pip install --upgrade pip
+````
 
 Configure the Python interpreter in PyCharm:
 
@@ -48,6 +30,17 @@ At this point opening a new terminal should show the virtual environment is acti
 
 ## Installation
 
+
+Install invoke:
+
 ```bash
-uv add customtkinter
+source .venv/bin/activate
+pip install invoke
+```
+
+Use invoke to install the dependencies:
+
+```bash
+source .venv/bin/activate
+invoke install
 ```
